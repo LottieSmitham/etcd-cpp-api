@@ -1,6 +1,6 @@
-etcd-cpp-api is a C++ API for [etcd](https://github.com/coreos/etcd).
+etcd-cpp-api#is a C++ API for [etcd](https://github.com/coreos/etcd).
 
-!# Requirements
+ ! Requirements
 
    * [C++ REST SDK](http://casablanca.codeplex.com/)
      Boost libraries
@@ -248,4 +248,4 @@ At first glance it seems that ```watch_for_changes()``` calls itself on every va
 fact it just sends the asynchron request, sets up a callback for the response and then returns.  The
 callback is executed by some thread from the pplx library's thread pool and the callback (in this
 case a small lambda function actually) will call ```watch_for_changes``` again from there.
-  
+   
